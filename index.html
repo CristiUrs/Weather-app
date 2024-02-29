@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="main.js" defer></script>
+        <title>Weather-App</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="searchBox">
+                <input type="text" placeholder="Location" class="searchInput" />
+                <button class="searchButton">
+                    <i class="fa-solid fa-magnifying-glass-location"></i>
+                </button>
+            </div>
+
+            <div class="weatherBox">
+                <div class="weather">
+                    <p class="temperature">0<span>°C</span></p>
+                    <p class="description">Broken Clouds</p>
+                    <p class="weatherAverage">
+                        Min<span class="minTemp">0</span> Max<span
+                            class="maxTemp"
+                            >0</span
+                        >
+                    </p>
+                    <img src="img/cloud.png" />
+                </div>
+            </div>
+
+            <div class="weatherDetails">
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div>
+                        <div>
+                            <span>0%</span>
+                        </div>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <div>
+                            <span>0km/h</span>
+                        </div>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="error">
+                <img src="img/error.jpg" />
+                <p>Location not found!</p>
+            </div>
+        </div>
+    </body>
+</html>
